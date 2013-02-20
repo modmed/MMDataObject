@@ -23,6 +23,18 @@
 		210F9AF916D4569E00C47BA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 210F9AD416D4569E00C47BA5 /* Foundation.framework */; };
 		210F9B0116D4569E00C47BA5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 210F9AFF16D4569E00C47BA5 /* InfoPlist.strings */; };
 		210F9B0416D4569E00C47BA5 /* MMDataObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 210F9B0316D4569E00C47BA5 /* MMDataObjectTests.m */; };
+		210F9B1716D456BA00C47BA5 /* TestThing.m in Sources */ = {isa = PBXBuildFile; fileRef = 210F9B0E16D456BA00C47BA5 /* TestThing.m */; };
+		210F9B1816D456BA00C47BA5 /* TestThing.m in Sources */ = {isa = PBXBuildFile; fileRef = 210F9B0E16D456BA00C47BA5 /* TestThing.m */; };
+		210F9B1916D456BA00C47BA5 /* TestLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 210F9B1016D456BA00C47BA5 /* TestLog.m */; };
+		210F9B1A16D456BA00C47BA5 /* TestLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 210F9B1016D456BA00C47BA5 /* TestLog.m */; };
+		210F9B1B16D456BA00C47BA5 /* TestLogWithAliases.m in Sources */ = {isa = PBXBuildFile; fileRef = 210F9B1216D456BA00C47BA5 /* TestLogWithAliases.m */; };
+		210F9B1C16D456BA00C47BA5 /* TestLogWithAliases.m in Sources */ = {isa = PBXBuildFile; fileRef = 210F9B1216D456BA00C47BA5 /* TestLogWithAliases.m */; };
+		210F9B1D16D456BA00C47BA5 /* TestLogWithNestedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 210F9B1416D456BA00C47BA5 /* TestLogWithNestedObjects.m */; };
+		210F9B1E16D456BA00C47BA5 /* TestLogWithNestedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 210F9B1416D456BA00C47BA5 /* TestLogWithNestedObjects.m */; };
+		210F9B1F16D456BA00C47BA5 /* TestLogWithFormatters.m in Sources */ = {isa = PBXBuildFile; fileRef = 210F9B1616D456BA00C47BA5 /* TestLogWithFormatters.m */; };
+		210F9B2016D456BA00C47BA5 /* TestLogWithFormatters.m in Sources */ = {isa = PBXBuildFile; fileRef = 210F9B1616D456BA00C47BA5 /* TestLogWithFormatters.m */; };
+		210F9B2316D456C700C47BA5 /* MMDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 210F9B2216D456C700C47BA5 /* MMDataObject.m */; };
+		210F9B2416D456C700C47BA5 /* MMDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 210F9B2216D456C700C47BA5 /* MMDataObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +70,18 @@
 		210F9B0016D4569E00C47BA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		210F9B0216D4569E00C47BA5 /* MMDataObjectTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMDataObjectTests.h; sourceTree = "<group>"; };
 		210F9B0316D4569E00C47BA5 /* MMDataObjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMDataObjectTests.m; sourceTree = "<group>"; };
+		210F9B0D16D456BA00C47BA5 /* TestThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestThing.h; sourceTree = "<group>"; };
+		210F9B0E16D456BA00C47BA5 /* TestThing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestThing.m; sourceTree = "<group>"; };
+		210F9B0F16D456BA00C47BA5 /* TestLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLog.h; sourceTree = "<group>"; };
+		210F9B1016D456BA00C47BA5 /* TestLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLog.m; sourceTree = "<group>"; };
+		210F9B1116D456BA00C47BA5 /* TestLogWithAliases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLogWithAliases.h; sourceTree = "<group>"; };
+		210F9B1216D456BA00C47BA5 /* TestLogWithAliases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLogWithAliases.m; sourceTree = "<group>"; };
+		210F9B1316D456BA00C47BA5 /* TestLogWithNestedObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLogWithNestedObjects.h; sourceTree = "<group>"; };
+		210F9B1416D456BA00C47BA5 /* TestLogWithNestedObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLogWithNestedObjects.m; sourceTree = "<group>"; };
+		210F9B1516D456BA00C47BA5 /* TestLogWithFormatters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLogWithFormatters.h; sourceTree = "<group>"; };
+		210F9B1616D456BA00C47BA5 /* TestLogWithFormatters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLogWithFormatters.m; sourceTree = "<group>"; };
+		210F9B2116D456C700C47BA5 /* MMDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDataObject.h; sourceTree = "<group>"; };
+		210F9B2216D456C700C47BA5 /* MMDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDataObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +141,18 @@
 		210F9AD816D4569E00C47BA5 /* MMDataObject */ = {
 			isa = PBXGroup;
 			children = (
+				210F9B0D16D456BA00C47BA5 /* TestThing.h */,
+				210F9B0E16D456BA00C47BA5 /* TestThing.m */,
+				210F9B0F16D456BA00C47BA5 /* TestLog.h */,
+				210F9B1016D456BA00C47BA5 /* TestLog.m */,
+				210F9B1116D456BA00C47BA5 /* TestLogWithAliases.h */,
+				210F9B1216D456BA00C47BA5 /* TestLogWithAliases.m */,
+				210F9B1316D456BA00C47BA5 /* TestLogWithNestedObjects.h */,
+				210F9B1416D456BA00C47BA5 /* TestLogWithNestedObjects.m */,
+				210F9B1516D456BA00C47BA5 /* TestLogWithFormatters.h */,
+				210F9B1616D456BA00C47BA5 /* TestLogWithFormatters.m */,
+				210F9B2116D456C700C47BA5 /* MMDataObject.h */,
+				210F9B2216D456C700C47BA5 /* MMDataObject.m */,
 				210F9AE116D4569E00C47BA5 /* MMAppDelegate.h */,
 				210F9AE216D4569E00C47BA5 /* MMAppDelegate.m */,
 				210F9AEA16D4569E00C47BA5 /* MainStoryboard.storyboard */,
@@ -274,6 +310,12 @@
 				210F9ADF16D4569E00C47BA5 /* main.m in Sources */,
 				210F9AE316D4569E00C47BA5 /* MMAppDelegate.m in Sources */,
 				210F9AEF16D4569E00C47BA5 /* MMViewController.m in Sources */,
+				210F9B1716D456BA00C47BA5 /* TestThing.m in Sources */,
+				210F9B1916D456BA00C47BA5 /* TestLog.m in Sources */,
+				210F9B1B16D456BA00C47BA5 /* TestLogWithAliases.m in Sources */,
+				210F9B1D16D456BA00C47BA5 /* TestLogWithNestedObjects.m in Sources */,
+				210F9B1F16D456BA00C47BA5 /* TestLogWithFormatters.m in Sources */,
+				210F9B2316D456C700C47BA5 /* MMDataObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +324,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				210F9B0416D4569E00C47BA5 /* MMDataObjectTests.m in Sources */,
+				210F9B1816D456BA00C47BA5 /* TestThing.m in Sources */,
+				210F9B1A16D456BA00C47BA5 /* TestLog.m in Sources */,
+				210F9B1C16D456BA00C47BA5 /* TestLogWithAliases.m in Sources */,
+				210F9B1E16D456BA00C47BA5 /* TestLogWithNestedObjects.m in Sources */,
+				210F9B2016D456BA00C47BA5 /* TestLogWithFormatters.m in Sources */,
+				210F9B2416D456C700C47BA5 /* MMDataObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
