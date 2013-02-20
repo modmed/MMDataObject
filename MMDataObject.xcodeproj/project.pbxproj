@@ -35,6 +35,8 @@
 		210F9B2016D456BA00C47BA5 /* TestLogWithFormatters.m in Sources */ = {isa = PBXBuildFile; fileRef = 210F9B1616D456BA00C47BA5 /* TestLogWithFormatters.m */; };
 		210F9B2316D456C700C47BA5 /* MMDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 210F9B2216D456C700C47BA5 /* MMDataObject.m */; };
 		210F9B2416D456C700C47BA5 /* MMDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 210F9B2216D456C700C47BA5 /* MMDataObject.m */; };
+		210F9B2816D4581500C47BA5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 210F9B2716D4581500C47BA5 /* README.md */; };
+		210F9B2916D4581500C47BA5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 210F9B2716D4581500C47BA5 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,7 @@
 		210F9B1616D456BA00C47BA5 /* TestLogWithFormatters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLogWithFormatters.m; sourceTree = "<group>"; };
 		210F9B2116D456C700C47BA5 /* MMDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDataObject.h; sourceTree = "<group>"; };
 		210F9B2216D456C700C47BA5 /* MMDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDataObject.m; sourceTree = "<group>"; };
+		210F9B2716D4581500C47BA5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,7 @@
 		210F9AC616D4569E00C47BA5 = {
 			isa = PBXGroup;
 			children = (
+				210F9B2716D4581500C47BA5 /* README.md */,
 				210F9AD816D4569E00C47BA5 /* MMDataObject */,
 				210F9AFC16D4569E00C47BA5 /* MMDataObjectTests */,
 				210F9AD116D4569E00C47BA5 /* Frameworks */,
@@ -141,18 +145,8 @@
 		210F9AD816D4569E00C47BA5 /* MMDataObject */ = {
 			isa = PBXGroup;
 			children = (
-				210F9B0D16D456BA00C47BA5 /* TestThing.h */,
-				210F9B0E16D456BA00C47BA5 /* TestThing.m */,
-				210F9B0F16D456BA00C47BA5 /* TestLog.h */,
-				210F9B1016D456BA00C47BA5 /* TestLog.m */,
-				210F9B1116D456BA00C47BA5 /* TestLogWithAliases.h */,
-				210F9B1216D456BA00C47BA5 /* TestLogWithAliases.m */,
-				210F9B1316D456BA00C47BA5 /* TestLogWithNestedObjects.h */,
-				210F9B1416D456BA00C47BA5 /* TestLogWithNestedObjects.m */,
-				210F9B1516D456BA00C47BA5 /* TestLogWithFormatters.h */,
-				210F9B1616D456BA00C47BA5 /* TestLogWithFormatters.m */,
-				210F9B2116D456C700C47BA5 /* MMDataObject.h */,
-				210F9B2216D456C700C47BA5 /* MMDataObject.m */,
+				210F9B2616D4577800C47BA5 /* MMDataObject */,
+				210F9B2516D4575E00C47BA5 /* Test Classes */,
 				210F9AE116D4569E00C47BA5 /* MMAppDelegate.h */,
 				210F9AE216D4569E00C47BA5 /* MMAppDelegate.m */,
 				210F9AEA16D4569E00C47BA5 /* MainStoryboard.storyboard */,
@@ -194,6 +188,32 @@
 				210F9AFF16D4569E00C47BA5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		210F9B2516D4575E00C47BA5 /* Test Classes */ = {
+			isa = PBXGroup;
+			children = (
+				210F9B0D16D456BA00C47BA5 /* TestThing.h */,
+				210F9B0E16D456BA00C47BA5 /* TestThing.m */,
+				210F9B0F16D456BA00C47BA5 /* TestLog.h */,
+				210F9B1016D456BA00C47BA5 /* TestLog.m */,
+				210F9B1116D456BA00C47BA5 /* TestLogWithAliases.h */,
+				210F9B1216D456BA00C47BA5 /* TestLogWithAliases.m */,
+				210F9B1316D456BA00C47BA5 /* TestLogWithNestedObjects.h */,
+				210F9B1416D456BA00C47BA5 /* TestLogWithNestedObjects.m */,
+				210F9B1516D456BA00C47BA5 /* TestLogWithFormatters.h */,
+				210F9B1616D456BA00C47BA5 /* TestLogWithFormatters.m */,
+			);
+			name = "Test Classes";
+			sourceTree = "<group>";
+		};
+		210F9B2616D4577800C47BA5 /* MMDataObject */ = {
+			isa = PBXGroup;
+			children = (
+				210F9B2116D456C700C47BA5 /* MMDataObject.h */,
+				210F9B2216D456C700C47BA5 /* MMDataObject.m */,
+			);
+			name = MMDataObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +293,7 @@
 				210F9AE716D4569E00C47BA5 /* Default@2x.png in Resources */,
 				210F9AE916D4569E00C47BA5 /* Default-568h@2x.png in Resources */,
 				210F9AEC16D4569E00C47BA5 /* MainStoryboard.storyboard in Resources */,
+				210F9B2816D4581500C47BA5 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				210F9B0116D4569E00C47BA5 /* InfoPlist.strings in Resources */,
+				210F9B2916D4581500C47BA5 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
