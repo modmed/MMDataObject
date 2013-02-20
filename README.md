@@ -78,7 +78,7 @@ Where those formatter blocks are defined as
 }
 ```
 
-Again, better examples will come soon… but the idea is that you can apply whatever custom input and output formats that you might need by writing the needed format blocks.
+Again, better examples will come soon… but the idea is that you can apply whatever custom input and output formats that you might need by writing some simple format blocks.
 
 Nested collections of other objects
 -----------------------------------
