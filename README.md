@@ -14,9 +14,11 @@ Copy MMDataObject.m and MMDataObject.h into your project and make MMDataObject b
 Overview
 --------
 
-It is a common thing to have an iOS application talk to a REST API, where the API format is JSON based. You might be using AFNetworking or something else for making your HTTP calls, but it's still up to you to parse the response and map it to your data objects. If your data object has properties that match what the API sends and receives, then this is a really tedious thing to have to do.
+It is a common thing to have an iOS application talk to a REST API, where the API format is JSON or XML based. You might be using AFNetworking (or something else) for making your HTTP calls, but it's still up to you to map the resulting NSDictionary from the parser to your data objects. If your data object has properties that match what the API sends and receives, then this is a really tedious thing to have to do.
 
-MMDataObject takes advantage of the objective-c runtime methods to automatically do this mapping for you. Just use MMDataObject as the base class of your data objects and you'll get an "initWithAttributes:" and "attributes" method for free. MMDataObject will also try to automatically map properties to the correct classes, so when the API sends you a string for a date you automatically get an NSDate instead.
+MMDataObject takes advantage of the objective-c runtime methods to automatically do this mapping for you. Just use MMDataObject as the base class of your data objects and you'll get an "initWithAttributes:" and "attributes" method for free. MMDataObject will also try to automatically map properties to the correct classes, so when the API sends you a string for a date but your actual property is defined as an NSDate then you'll end up with the NSDate you expected.
+
+This section will be expanded with more examples and details soon.
 
 Customization
 -------------
@@ -56,6 +58,28 @@ If you would like to do some reformatting of a parameter value as it comes in (a
 }
 ```
 
+Where those formatter blocks are defined as
+
+```
++ (FormatBlock)lolify {
+    FormatBlock lolify = ^(NSString* value) {
+        return [NSString stringWithFormat:@"LOL!!!! %@", value];
+    };
+    
+    return [lolify copy];
+}
+
++ (FormatBlock)unlolify {
+    FormatBlock unlolify = ^(NSString* value) {
+        return [value substringFromIndex:8];
+    };
+    
+    return [unlolify copy];
+}
+```
+
+Again, better examples will come soon… but the idea is that you can apply whatever custom input and output formats that you might need by writing the needed format blocks.
+
 Nested collections of other objects
 -----------------------------------
 
@@ -71,6 +95,8 @@ If your API returns a nested array of other objects, you can automatically creat
     return self;
 }
 ```
+
+Then, you'll automatically end up with an array of TestThing objects in your "things" property.
 
 TODO
 ----
