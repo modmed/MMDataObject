@@ -9,8 +9,6 @@
 #import "MMDataObject.h"
 #import <objc/runtime.h>
 
-#import "LaunchPadIdentity.h"
-
 #pragma mark - Object Property
 
 @interface MMDataObjectProperty : NSObject
