@@ -9,6 +9,8 @@
 #import "MMDataObject.h"
 #import <objc/runtime.h>
 
+#import "LaunchPadIdentity.h"
+
 #pragma mark - Object Property
 
 @interface MMDataObjectProperty : NSObject
@@ -139,7 +141,7 @@
                         // if there's no formatter, then do default mappings
                         // FIXME to not use blocks here, smells funny
                         if ([propertyAttributes.type isEqualToString:@"NSDate"]) {
-                            FormatBlock stringToDate = [MMDataObject stringToDateWithFormat:@"yyyy-mm-dd HH:mm:ss"];
+			    FormatBlock stringToDate = [MMDataObject stringToDateWithFormat:@"yyyy-mm-dd HH:mm:ss"];
                             attribute = stringToDate(attribute);
                         }
                         else if ([propertyAttributes.type isEqualToString:@"NSArray"]
@@ -154,12 +156,15 @@
                                 attribute = objects;
                             }
                         }
+                        else if ([NSClassFromString(propertyAttributes.type) instancesRespondToSelector:@selector(initWithAttributes:)]) {
+                            attribute = [[NSClassFromString(propertyAttributes.type) alloc] initWithAttributes:attribute];
+                        }
+                        
                         // TODO
                         // NSNumber
                         // NSDecimalNumber
-                        // Other types that respond to initWithAttributes ?
+                        // ??
                     }
-                    
                     [self setValue:attribute forKey:propertyName];
                 }
             }
